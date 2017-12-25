@@ -10,6 +10,10 @@ using App2.Models;
 using App2.Views;
 using System.Runtime.CompilerServices;
 
+
+using System.Threading.Tasks;
+
+
 namespace App2.ViewModels
 {
     public class CustomerViewModel : INotifyPropertyChanged

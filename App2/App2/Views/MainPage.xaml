@@ -6,18 +6,18 @@
              xmlns:customerVm="clr-namespace:App2.ViewModels">
 
     <ContentPage.BindingContext>
-        <customerVm:CustomerViexModel>
-            <ContentPage.Content>
-                <StackLayout Padding="20">
-                    <Button Text="List Of Customers"
-          Command="{Binding NavToListCommand}"/>
-                    <Button Text="Create Customer Details"
-          Command="{Binding NavToCreateCommand}"/>
-                    <Button Text="Update or Delete Customer by Id"
-          Command="{Binding NavToUpdateDeleteCommand}"/>
-                </StackLayout>
-            </ContentPage.Content>
-        </customerVm:CustomerViexModel>
-    </ContentPage.BindingContext>
+        <customerVm:CustomerViewModel/>
 
+
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Button Text="List Of Customers"
+          Command="{Binding NavToListCommand}"/>
+            <Button Text="Create Customer Details"
+          Command="{Binding NavToCreateCommand}"/>
+            <Button Text="Update or Delete Customer by Id"
+          Command="{Binding NavToUpdateDeleteCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
