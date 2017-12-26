@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 
 
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 
 namespace App2.ViewModels
 {
@@ -125,7 +125,7 @@ namespace App2.ViewModels
             }
         }
 
-        public Command NavToCreateCommand
+        public ICommand NavToCreateCommand
         {
             get
             {

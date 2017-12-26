@@ -3,15 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App2"
              x:Class="App2.MainPage"
-             xmlns:customerVm="clr-namespace:App2.ViewModels"
+             xmlns:customersVm="clr-namespace:App2.ViewModels"
              Title="Main Page">
 
     <ContentPage.BindingContext>
-        <customerVm:CustomerViewModel/>
-
-
+        <customersVm:CustomerViewModel/>
     </ContentPage.BindingContext>
-   
+    <ContentPage.Content>
         <StackLayout Padding="20">
             <Button Text="List Of Customers"
           Command="{Binding NavToListCommand}" />
@@ -20,5 +18,7 @@
             <Button Text="Update or Delete Customer by Id"
           Command="{Binding NavToUpdateDeleteCommand}"/>
         </StackLayout>
+    </ContentPage.Content>
+        
     
 </ContentPage>
