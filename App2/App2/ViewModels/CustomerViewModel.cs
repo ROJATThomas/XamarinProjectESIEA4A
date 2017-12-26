@@ -131,7 +131,14 @@ namespace App2.ViewModels
             {
                 return new Command(async () =>
                 {
-                    await App.Current.MainPage.Navigation.PushAsync(new CreateCustomer());
+                    Console.WriteLine("haha");
+                    var navPage = new NavigationPage(new MainPage());
+                    Application.Current.MainPage = navPage;
+                    
+                    await navPage.PushAsync(new CreateCustomer());
+                    await  navPage.PopAsync();
+                    navPage.Popped += (s, e) => { };
+
                 });
             }
         }

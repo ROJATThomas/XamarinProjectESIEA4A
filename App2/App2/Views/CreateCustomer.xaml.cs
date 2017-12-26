@@ -15,6 +15,8 @@ namespace App2.Views
 		public CreateCustomer()
 		{
 			InitializeComponent ();
-		}
+           
+
+        }
 	}
 }

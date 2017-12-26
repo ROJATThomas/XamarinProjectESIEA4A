@@ -3,21 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App2"
              x:Class="App2.MainPage"
-             xmlns:customerVm="clr-namespace:App2.ViewModels">
+             xmlns:customerVm="clr-namespace:App2.ViewModels"
+             Title="Main Page">
 
     <ContentPage.BindingContext>
         <customerVm:CustomerViewModel/>
 
 
     </ContentPage.BindingContext>
-    <ContentPage.Content>
+   
         <StackLayout Padding="20">
             <Button Text="List Of Customers"
-          Command="{Binding NavToListCommand}"/>
+          Command="{Binding NavToListCommand}" />
             <Button Text="Create Customer Details"
           Command="{Binding NavToCreateCommand}"/>
             <Button Text="Update or Delete Customer by Id"
           Command="{Binding NavToUpdateDeleteCommand}"/>
         </StackLayout>
-    </ContentPage.Content>
+    
 </ContentPage>
